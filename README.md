@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## E-Commerce Next JS , TypeScript , Prisma
 
-## Getting Started
+1hr:20min
 
-First, run the development server:
+### Prisma
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Prisma is an open-source database toolkit that simplifies database access and management for modern applications. It provides a set of tools and libraries that help developers work with databases more efficiently and securely. Prisma is often used in the context of building backend services, APIs, and other server-side components for web and mobile applications.
+
+#### 1hr:20min Prisma,PlanetScale , MySQl setup(Admin)
+
+```
+npm i -D prisma
+npm i @prisma/client
+npx prisma init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://planetscale.com/
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Model create in Schema.prisma
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npx prisma generate
+npx prisma db push
+```
 
-## Learn More
+api/sotre/route.ts --> store-modal.text-xs
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm i react-hot-toast
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Toaster in toast-provider.tsx in app/layout.tsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### 1hr:45min Dashboard setup(Admin)

@@ -37,15 +37,16 @@ export const Modal: React.FC<ModalProps> = ({
   };
 
   return (
-    <Dialog open={isOpen} aria-labelledby="responsive-dialog-title">
+    <Dialog
+      open={isOpen}
+      onClose={onChange}
+      aria-labelledby="responsive-dialog-title"
+    >
       <DialogTitle id="responsive-dialog-title">{title}</DialogTitle>
       <DialogContent>
         <DialogContentText>{description}</DialogContentText>
+        <div>{children}</div>
       </DialogContent>
-      <DialogActions>
-        <Button autoFocus>Disagree</Button>
-        <Button autoFocus>Agree</Button>
-      </DialogActions>
     </Dialog>
   );
 };
