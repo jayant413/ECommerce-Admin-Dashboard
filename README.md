@@ -32,3 +32,11 @@ npm i react-hot-toast
 Toaster in toast-provider.tsx in app/layout.tsx
 
 #### 1hr:45min Dashboard setup(Admin)
+
+```
+npx prisma migrate reset
+npx prisma generate
+npx prisma db push
+```
+
+#### 2hr Navigation bar (Admin)
