@@ -40,3 +40,10 @@ npx prisma db push
 ```
 
 #### 2hr Navigation bar (Admin)
+
+```
+npx shadcn-ui@latest add popover
+npx shadcn-ui@latest add command
+```
+
+#### 2hr:40min Setting page (Admin)
