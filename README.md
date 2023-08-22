@@ -47,3 +47,10 @@ npx shadcn-ui@latest add command
 ```
 
 #### 2hr:40min Setting page (Admin)
+
+```
+npx shadcn-ui@latest add separator
+npx shadcn-ui@latest add alert
+```
+
+#### 3hr:35min Billing board (Admin)
