@@ -53,4 +53,10 @@ npx shadcn-ui@latest add separator
 npx shadcn-ui@latest add alert
 ```
 
-#### 3hr:35min Billing board (Admin)
+#### 4hr:45min Billing board (Admin) Date : 18th Sep 2023
+
+done till 4hr:45min
+
+#### todo
+
+!! Resolve cloudinary image issue

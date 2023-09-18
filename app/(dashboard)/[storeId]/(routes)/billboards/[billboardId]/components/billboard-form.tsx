@@ -61,6 +61,8 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
   });
 
   const onSubmit = async (data: BillboardFormValues) => {
+    data.imageUrl =
+      "https://res.cloudinary.com/duqe9s39i/image/upload/v1692781441/fqkmm6mbfzg6ldarsqjd.jpg";
     try {
       setLoading(true);
       if (initialData) {
@@ -89,8 +91,8 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
         `/api/${params.storeId}/billboards/${params.billboardId}`
       );
       router.refresh();
-      router.push("/");
-      toast.success("Store deleted.");
+      router.push(`/${params.storeId}/billboards`);
+      toast.success("Billboard deleted.");
     } catch (error: any) {
       toast.error(
         "Make sure you removed all categories using this billboard first."
