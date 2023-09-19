@@ -55,14 +55,11 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
     resolver: zodResolver(formSchema),
     defaultValues: initialData || {
       label: "",
-      imageUrl:
-        "https://res.cloudinary.com/duqe9s39i/image/upload/v1692781441/fqkmm6mbfzg6ldarsqjd.jpg",
+      imageUrl: "",
     },
   });
 
   const onSubmit = async (data: BillboardFormValues) => {
-    data.imageUrl =
-      "https://res.cloudinary.com/duqe9s39i/image/upload/v1692781441/fqkmm6mbfzg6ldarsqjd.jpg";
     try {
       setLoading(true);
       if (initialData) {
@@ -171,7 +168,6 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({
           </Button>
         </form>
       </Form>
-      <Separator />
     </>
   );
 };

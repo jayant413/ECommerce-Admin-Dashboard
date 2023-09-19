@@ -1,19 +1,10 @@
 "use client";
 
 import * as React from "react";
-// import {
-//   Check,
-//   ChevronsUpDown,
-//   PlusCircle,
-//   Store as StoreIcon,
-// } from "lucide-react";
 import { Store } from "@prisma/client";
 import { useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { BiStore } from "react-icons/bi";
-import { BsPlusCircle } from "react-icons/bs";
-import { AiOutlineCheckCircle } from "react-icons/ai";
-import { PiArrowsDownUpBold } from "react-icons/pi";
+import { LuCheck, LuChevronsUpDown, LuPlusCircle } from "react-icons/lu";
 
 import { Popover, PopoverTrigger } from "@/components/ui/popover";
 import { useStoreModal } from "@/hooks/use-store-modal";
@@ -22,13 +13,14 @@ import { cn } from "@/lib/utils";
 import { PopoverContent } from "@radix-ui/react-popover";
 import {
   Command,
-  CommandEmpty,
   CommandGroup,
+  CommandEmpty,
   CommandInput,
   CommandItem,
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
+import { BiStore } from "react-icons/bi";
 
 type PopoverTriggerProps = React.ComponentPropsWithoutRef<
   typeof PopoverTrigger
@@ -75,7 +67,7 @@ export default function StoreSwitcher({
         >
           <BiStore className="mr-2 h-4 w-4" />
           {currentStore?.label}
-          <PiArrowsDownUpBold className="ml-auto h-4 w-4 shrink-0 opacity-50 " />
+          <LuChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50 " />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0 ">
@@ -92,7 +84,7 @@ export default function StoreSwitcher({
                 >
                   <BiStore className="mr-2 h-4 w-4" />
                   {store.label}
-                  <AiOutlineCheckCircle
+                  <LuCheck
                     className={cn(
                       "ml-auto h-4 w-4",
                       currentStore?.value === store.value
@@ -113,7 +105,7 @@ export default function StoreSwitcher({
                   storeModal.onOpen();
                 }}
               >
-                <BsPlusCircle className="mr-2 h-5 w-5" />
+                <LuPlusCircle className="mr-2 h-5 w-5" />
                 Create Store
               </CommandItem>
             </CommandGroup>
