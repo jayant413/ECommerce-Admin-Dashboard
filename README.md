@@ -1,5 +1,11 @@
 ## E-Commerce Next JS , TypeScript , Prisma
 
+replace in package.json
+
+```
+    "start": "next start",
+```
+
 1hr:20min
 
 ### Prisma
@@ -60,3 +66,9 @@ Done
 #### 5hr:18min Category Entity
 
 Begin
+
+```
+git add .
+git commit -m "."
+git push
+```
