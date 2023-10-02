@@ -78,18 +78,13 @@ export const StoreModal = () => {
               />
               <div className="pt-6 space-x-2 flex items-center justify-end w-full">
                 <Button
-                  //  disabled={loading}
                   variant="outline"
                   onClick={storeModal.onClose}
                   disabled={loading}
                 >
                   Cancel
                 </Button>
-                <Button
-                  // disabled={loading}
-                  disabled={loading}
-                  type="submit"
-                >
+                <Button disabled={loading} type="submit">
                   Continue
                 </Button>
               </div>
